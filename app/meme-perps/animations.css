@@ -1,0 +1,278 @@
+/* Meme Perps Animations */
+
+/* Fade in up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Scale in animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Slide in from right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide in from left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Pulse glow animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(163, 255, 18, 0);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(163, 255, 18, 0.3);
+  }
+}
+
+/* Row highlight animation */
+@keyframes rowHighlight {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(163, 255, 18, 0.1);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* Animation classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.4s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.4s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.1s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.2s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.3s; }
+.stagger-7 { animation-delay: 0.35s; }
+.stagger-8 { animation-delay: 0.4s; }
+.stagger-9 { animation-delay: 0.45s; }
+.stagger-10 { animation-delay: 0.5s; }
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(163, 255, 18, 0.3);
+}
+
+/* Button press effect */
+.press-effect {
+  transition: transform 0.1s ease;
+}
+
+.press-effect:active {
+  transform: scale(0.98);
+}
+
+/* Row hover with slide arrow */
+.row-hover-arrow {
+  transition: transform 0.2s ease;
+}
+
+.group:hover .row-hover-arrow {
+  transform: translateX(4px);
+}
+
+/* Star animation */
+.star-animate {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.star-animate:hover {
+  transform: scale(1.2);
+}
+
+.star-animate:active {
+  transform: scale(0.9);
+}
+
+/* Price change flash */
+.price-flash-up {
+  animation: flashGreen 0.5s ease-out;
+}
+
+.price-flash-down {
+  animation: flashRed 0.5s ease-out;
+}
+
+@keyframes flashGreen {
+  0%, 100% { background-color: transparent; }
+  50% { background-color: rgba(34, 197, 94, 0.2); }
+}
+
+@keyframes flashRed {
+  0%, 100% { background-color: transparent; }
+  50% { background-color: rgba(239, 68, 68, 0.2); }
+}
+
+/* Card entrance */
+.card-entrance {
+  opacity: 0;
+  animation: scaleIn 0.4s ease-out 0.1s forwards;
+}
+
+/* Tab underline animation */
+.tab-underline {
+  position: relative;
+}
+
+.tab-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.tab-underline:hover::after,
+.tab-underline.active::after {
+  width: 100%;
+}
+
+/* Shimmer loading effect */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #1a1a1a 0%,
+    #2a2a2a 50%,
+    #1a1a1a 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Input focus animation */
+.input-focus-ring {
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.input-focus-ring:focus {
+  box-shadow: 0 0 0 3px rgba(163, 255, 18, 0.2);
+  border-color: #A3FF12;
+}
+
+/* Dropdown animation */
+.dropdown-enter {
+  animation: dropdownEnter 0.2s ease-out forwards;
+}
+
+@keyframes dropdownEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tooltip animation */
+.tooltip-pop {
+  animation: tooltipPop 0.2s ease-out forwards;
+}
+
+@keyframes tooltipPop {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
