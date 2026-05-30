@@ -10,7 +10,7 @@
   [![Solana](https://img.shields.io/badge/Solana-mainnet-9945FF?logo=solana&logoColor=white)](https://solana.com/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-A3FF12.svg)](./LICENSE)
 
-  [perpolis.xyz](https://perpolis.xyz) · [app.perpolis.xyz](https://app.perpolis.xyz) · [@perpolisxyz](https://x.com/perpolisxyz)
+  [Website](https://perpolis.xyz) · [App](https://app.perpolis.xyz) · [X](https://x.com/Perpolisxyz) · [Telegram](https://t.me/perpolisxyz) · [Community](https://dm.fun/join?ref=perpolis)
 </div>
 
 ---
@@ -23,14 +23,26 @@ The matching layer is **Perpolator** — our in-house perpetuals engine that tra
 
 This repository contains the full marketing site, the trading frontend, the order/position API and the Perpolator integration glue.
 
-## Live
+## $PERPOLIS
+
+The project's token is **$PERPOLIS** on Solana. Holding it unlocks trader tiers in the app — higher tiers boost daily rewards, quest payouts and max leverage (read on-chain, can't be faked).
+
+```
+Contract (CA): PERPqFjNJ6TWryYxn74BvjyuN91nQ2DTCX4UryeSAdS
+```
+
+> Only trust the contract address published here and on our official channels below.
+
+## Links
 
 | Surface          | URL                                                                    |
 | ---------------- | ---------------------------------------------------------------------- |
-| Marketing        | [https://perpolis.xyz](https://perpolis.xyz)                           |
+| Website          | [https://perpolis.xyz](https://perpolis.xyz)                           |
 | Trading app      | [https://app.perpolis.xyz](https://app.perpolis.xyz)                   |
 | Meme perps index | [https://perpolis.xyz/meme-perps](https://perpolis.xyz/meme-perps)     |
-| Twitter / X      | [@perpolisxyz](https://x.com/perpolisxyz)                              |
+| X / Twitter      | [@Perpolisxyz](https://x.com/Perpolisxyz)                              |
+| Telegram         | [t.me/perpolisxyz](https://t.me/perpolisxyz)                           |
+| Community (dm.fun) | [dm.fun/join?ref=perpolis](https://dm.fun/join?ref=perpolis)         |
 
 ## Features
 
